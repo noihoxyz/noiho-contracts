@@ -1,0 +1,21 @@
+[profile.default]
+src = "src"
+out = "out/solar"
+cache_path = "cache/solar"
+solc = "solar"
+evm_version = "cancun"
+optimizer = true
+optimizer_runs = 1
+via_ir = false
+bytecode_hash = "none"
+cbor_metadata = false
+code_size_limit = 24576
+
+[profile.solc]
+solc = "0.8.38"
+out = "out/solc"
+cache_path = "cache/solc"
+via_ir = true
+
+[lint]
+lint_on_build = false
